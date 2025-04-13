@@ -51,32 +51,6 @@ AWS_ACCESS_KEY_ID=your-access-key
 AWS_SECRET_ACCESS_KEY=your-secret-key
 ```
 
-### シェルでの設定
-
-または、以下のようにシェルで直接設定することもできます：
-
-```bash
-export KNOWLEDGE_BASE_ID=your-knowledge-base-id
-export AWS_REGION=your-aws-region
-```
-
-AWS認証情報は、AWS CLIの設定または環境変数で設定できます。
-
-## 使用方法
-
-### Bedrock KB Agentの使用
-
-```python
-from bedrock_kb import agent
-
-# エージェントのインスタンスを取得
-bedrock_agent = agent.root_agent
-
-# エージェントに質問を送信
-response = bedrock_agent.generate_content("AWSのLambda関数について教えてください")
-print(response.text)
-```
-
 ## プロジェクト構造
 
 ```bash
